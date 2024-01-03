@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+.links .material-symbols-outlined {
+  font-size: 2rem;
+  color: #9ca3af;
+}
+
+.material-symbols-outlined:hover {
+  color: #4f4fe6;
+}
+.links .active-icon {
+  color: #4f4fe6;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  /* background-color: ivory; */
+}
+.sideBar {
+  position: fixed;
+  padding: 1.5rem 1.5rem;
+  width: 350px;
+  height: 95dvh;
+  background-color: white;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 2rem;
+  border-right: 2px solid #d2d8e2;
+  /* position: relative; */
+  transition: all 0.5s linear;
+}
+
+.firstListContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 0.8rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: #374151;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+}
+.active {
+  background-color: #f9fafb;
+  color: #4f4fe6;
+}
+.links:hover {
+  background-color: #f9fafb;
+  color: #4f4fe6;
+}
+.links:hover .material-symbols-outlined {
+  color: #4f4fe6;
+}
+
+.iconAndText {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.links button,
+.listLink button {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.3rem 1.1rem;
+  border-radius: 5rem;
+  outline: none;
+  border: 2px solid #e6e9ec;
+  font-size: 1rem;
+  color: #374151;
+  background-color: white;
+}
+.listLink {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.3rem;
+  color: #374151;
+  border-radius: 0.4rem;
+  align-items: center;
+}
+
+.listLink button {
+  padding: 0.3rem 0.5rem;
+}
+.listLink:hover {
+  background-color: #f9fafb;
+  color: #4f4fe6;
+}
+.listLink:hover button {
+  border: 2px solid #4f4fe6;
+  color: #4f4fe6;
+}
+
+/* bottom sidebar design starts here */
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-top: auto;
+  /* position: absolute; */
+  /* top: 85%; */
+}
+.profileAvi {
+  width: 50px;
+  height: auto;
+}
+
+.profileAvi img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 120px;
+}
+
+/* Main page design starts here */
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-shrink: 2;
+  padding-right: 1.2rem;
+  padding-top: 2rem;
+  width: 80%;
+  margin-left: 400px;
+}
+.cardSection {
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem 2rem;
+  border-radius: 1.3rem;
+  gap: 1.2rem;
+  /* width: 100%; */
+}
+.last30Days h3 {
+  color: #151a20;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.cardGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.8rem;
+}
+
+.topCard {
+  display: flex;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.icon {
+  width: 2.5rem;
+  background-color: #4f4fe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.icon .material-symbols-outlined {
+  color: white;
+  font-size: 35px;
+}
+
+.textGroup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.textGroup h3 {
+  color: #9ca3af;
+}
+
+.bottomText {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.bottomText h2 {
+  font-size: 2.3rem;
+}
+.bottomText .material-symbols-outlined {
+  color: green;
+  font-size: 25px;
+  margin-left: 1rem;
+  margin-right: 0.4rem;
+}
+.bottomText .downward {
+  color: red;
+  margin-right: 0.4rem;
+}
+.bottomCard {
+  background-color: #e9ecf0;
+  padding: 1.5rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+/* The table section begins here */
+
+.tableSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #d2d8e2;
+  padding: 2rem 2rem;
+  border-radius: 0.8rem;
+}
+.textAndButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.description p {
+  font-size: 1.2rem;
+}
+.btnBtn {
+  outline: none;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+}
+/* .tableContainer {
+  width: 100%;
+  height: auto;
+} */
+table {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+}
+thead {
+  width: 100%;
+  border-bottom: 1px solid #9ca3af;
+}
+th {
+  text-align: left;
+  padding: 0 0 1rem 0;
+}
+th.longWidth {
+  width: 50%;
+}
+tbody {
+  width: 100%;
+  height: auto;
+}
+tbody tr {
+  border-bottom: 1px solid #9ca3af2c;
+}
+td {
+  text-align: left;
+  padding: 1.5rem 0;
+}
+.picAndText {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.pic {
+  width: 60px;
+  height: 60px;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  object-fit: cover;
+}
+.userName h3 {
+  color: #151a20;
+}
+.email h3 {
+  color: #5a5a5a;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.jobTitle h3 {
+  color: #374151;
+}
+.activeBtn {
+  background-color: #acdbba7b;
+  color: green;
+  border: 1px solid#91d5a5b4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  font-weight: 800;
+}
+.jobRole {
+  color: #5a5a5a;
+}
+td a {
+  font-size: 1.3rem;
+}
+
+/* Media queries */
+/* Media queries */
+
+@media screen and (max-width: 1520px) {
+  .cardGroup {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+  .description {
+    max-width: 95%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .tableContainer {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.8rem;
+  }
+}
